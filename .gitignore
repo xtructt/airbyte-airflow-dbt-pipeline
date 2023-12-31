@@ -2,3 +2,6 @@
 db/
 temporal/
 airbyte/configs/*
+/logs/*
+plugins/*
+__pycache__/*
