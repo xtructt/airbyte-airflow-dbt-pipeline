@@ -1,6 +1,5 @@
 .env
 db/
-temporal/
 airbyte/configs/*
 /logs/*
 plugins/*
