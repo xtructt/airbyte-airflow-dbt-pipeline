@@ -10,7 +10,8 @@ services:
       - postgres_data:/var/lib/postgresql/data
 
   webserver:
-    image: apache/airflow:2.8.0
+    # image: apache/airflow:2.8.0
+    build: .
     container_name: airflow_webserver
     restart: unless-stopped
     environment:
@@ -33,7 +34,8 @@ services:
     command: webserver
 
   scheduler:
-    image: apache/airflow:2.8.0
+    # image: apache/airflow:2.8.0
+    build: .
     container_name: airflow_scheduler
     restart: unless-stopped
     environment:
